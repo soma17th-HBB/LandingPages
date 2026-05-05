@@ -60,6 +60,8 @@ idea-interview-helper
 
 각 아이디어 폴더에는 아래 내용을 포함해주세요:
 
+또한, lean canvas 작성을 필수로 합니다.
+
 ```md
 # Idea Name
 
