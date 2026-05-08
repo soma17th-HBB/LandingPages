@@ -1,36 +1,32 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SignLog
 
-## Getting Started
+## 👤 Author
 
-First, run the development server:
+- 김현지
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Summary
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- 수화 기반 회의를 기록하고 분석하여 의사결정 데이터로 전환하는 AI 협업 SaaS
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Target User
 
-To learn more about Next.js, take a look at the following resources:
+- 수어 기반 회의를 진행하는 농인 커뮤니티 및 단체
+- 장애인 고용 기업
+- 공공기관 및 복지기관
+- ESG 및 디지털 포용 프로젝트를 운영하는 조직
+- 특수교육 기관 및 수어 통역 기반 협업 환경
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Value Proposition
 
-## Deploy on Vercel
+- 수화 회의는 기존 음성 기반 회의록 서비스의 혜택을 받기 어려우며, 회의 이후 기록·검색·재사용이 거의 불가능합니다.
+- SignLog는 수화 회의를 단순 음성 변환 수준이 아닌, 회의록·요약·액션 아이템·참여도·의사결정 흐름까지 분석 가능한 데이터로 전환합니다.
+- 손동작뿐 아니라 표정 및 비수지 신호를 함께 활용하여, 강조·동의·질문과 같은 상호작용 패턴을 분석합니다.
+- 이를 통해 조직은 회의 생산성을 높이고, 책임 추적 및 협업 효율을 개선할 수 있습니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---

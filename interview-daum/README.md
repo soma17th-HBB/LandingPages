@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 면접다움
 
-## Getting Started
+## 👤 Author
 
-First, run the development server:
+- 김현지
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 💡 Summary
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- AI 기반 실전 면접 시뮬레이션 플랫폼
+- 과제 풀이 이후 실제 면접처럼 꼬리 질문과 피드백까지 이어지는 면접 연습 서비스
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🎯 Target User
 
-To learn more about Next.js, take a look at the following resources:
+- 개발자 취업 준비생
+- 이직을 준비하는 주니어/미들 개발자
+- 면접 스터디를 진행하는 사용자
+- 과제형 면접 대비가 필요한 사용자
+- 부트캠프 및 기술 교육 수강생
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Value Proposition
 
-## Deploy on Vercel
+면접다움은 단순 예상 질문 생성 서비스가 아닙니다.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+기존 면접 준비 서비스는 문제를 풀거나 질문에 답변하는 것에서 끝나지만,  
+면접다움은 사용자의 답변과 과제 결과물을 기반으로 실시간 꼬리 질문을 생성하여 실제 면접 흐름을 경험할 수 있도록 합니다.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 핵심 가치
+
+- 과제 → 면접 → 피드백까지 이어지는 흐름 제공
+- AI 기반 실시간 꼬리 질문 생성
+- Zoom 형태의 다대다 면접 스터디 지원
+- 기술·인성·압박 면접관 페르소나 제공
+- 논리성, 확장성, 기술 선택 근거 중심 피드백 제공
+
+### 제공 모드
+
+#### 1. AI 면접관 모드
+
+혼자서 실전처럼 연습할 수 있는 1:1 AI 면접
+
+#### 2. 스터디 모드
+
+여러 사용자가 함께 참여하고 AI가 질문 흐름을 보조하는 다대다 면접 스터디
+
+#### 3. 과제형 면접 모드
+
+아키텍처 설계 및 트러블슈팅 문제를 풀이한 뒤,
+결과물을 기반으로 실제 면접처럼 꼬리 질문이 이어지는 실무형 면접 모드
+
+---
+
+## 🔥 Core Concept
+
+> “풀이가 끝이 아니라, 면접이 시작된다.”
+
+면접다움은 문제를 푸는 서비스가 아니라,  
+실제 면접 상황을 경험하게 만드는 서비스입니다.
