@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { type ReactElement } from "react";
 import { motion } from "framer-motion";
 import {
   ArrowRight,
@@ -16,6 +16,13 @@ import {
   Users,
   Video,
 } from "lucide-react";
+
+type ReportCardProps = {
+  icon: ReactElement<{ className?: string }>;
+  title: string;
+  value: string;
+  desc: string;
+};
 
 const features = [
   {
@@ -343,7 +350,7 @@ export default function SignLogLandingPage() {
   );
 }
 
-function ReportCard({ icon, title, value, desc }) {
+function ReportCard({ icon, title, value, desc }: ReportCardProps) {
   return (
     <div className="rounded-3xl border border-white/10 bg-[#100d1d] p-5">
       <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-2xl bg-violet-500/15 text-violet-200">
