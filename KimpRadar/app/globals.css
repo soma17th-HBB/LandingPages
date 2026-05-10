@@ -1,0 +1,136 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #f7f6f2;
+  --foreground: #0f0e0c;
+  --card: #ffffff;
+  --card-foreground: #0f0e0c;
+  --popover: #ffffff;
+  --popover-foreground: #0f0e0c;
+  --primary: #1a6b3c;
+  --primary-foreground: #ffffff;
+  --secondary: #0f0e0c;
+  --secondary-foreground: #ffffff;
+  --muted: #f7f6f2;
+  --muted-foreground: #9a9690;
+  --accent: #5ccf89;
+  --accent-foreground: #0f0e0c;
+  --destructive: #c0392b;
+  --destructive-foreground: #ffffff;
+  --border: #e2e0db;
+  --input: #e2e0db;
+  --ring: #1a6b3c;
+  
+  /* KIMPNET specific colors */
+  --ink: #0f0e0c;
+  --ink2: #4a4843;
+  --ink3: #9a9690;
+  --green: #1a6b3c;
+  --green-light: #e8f5ee;
+  --red: #c0392b;
+  --red-light: #fdf0ee;
+  --amber: #b8600a;
+  
+  --radius: 0.25rem;
+}
+
+@theme inline {
+  --font-sans: 'Pretendard Variable', 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-serif: var(--font-serif), 'DM Serif Display', serif;
+  --font-mono: var(--font-mono), 'JetBrains Mono', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Custom colors */
+  --color-ink: var(--ink);
+  --color-ink2: var(--ink2);
+  --color-ink3: var(--ink3);
+  --color-green: var(--green);
+  --color-green-light: var(--green-light);
+  --color-red: var(--red);
+  --color-red-light: var(--red-light);
+  --color-amber: var(--amber);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.animate-fade-up-delay-1 {
+  opacity: 0;
+  animation: fadeUp 0.6s 0.1s ease forwards;
+}
+
+.animate-fade-up-delay-2 {
+  opacity: 0;
+  animation: fadeUp 0.6s 0.2s ease forwards;
+}
+
+.animate-fade-up-delay-3 {
+  opacity: 0;
+  animation: fadeUp 0.6s 0.3s ease forwards;
+}
+
+.animate-ticker {
+  animation: ticker 28s linear infinite;
+}
+
+/* Scroll reveal - ensure content visible even without JS */
+.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
